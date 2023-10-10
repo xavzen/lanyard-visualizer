@@ -46,10 +46,10 @@ onStartTyping(() => {
 
    
 
-        <h4 class="text-white/50 md:text-lg md:w-2/3 text-center font-semibold">
-          Neat little user presence tracker.
-        </h4>
-        <div class="relative w-full md:w-1/2 flex justify-center">
+        <p class="text-white/50 md:text-lg md:w-9/10 text-center font-medium">
+          Neat little user presence visualizer
+        </p>
+        <div class="relative w-full md:w-full flex justify-center">
           <input
             v-model="userId"
             ref="inputElement"
@@ -70,21 +70,15 @@ onStartTyping(() => {
               Submit
             </button>
           </div>
+          
         </div>
+        <iframe src="https://discord.com/widget?id=1031602387300909056&theme=dark" width="350" height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>    
 
-        <div class="flex space-x-4 text-xl md:text-base text-white/50">
-          <a
-            href="https://discord.gg/talk"
-            target="_blank"
-            title="Join our discord"
-          >
-            <IconBrandDiscord class="hover:text-white transition-colors" />
-          </a>
+       
 
-         
-        </div>
+
       </div>
-    </header>
+</header>
   </div>
 </template>
 

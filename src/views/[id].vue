@@ -43,7 +43,7 @@ const getUser = computed(() => {
 
   return {
     id,
-    username: username || "Loading",
+    username: username || "Unknown",
     discriminator: discriminator || "0000",
     avatar: avatar && imageError.value === false ? avatarUri : fallbackImage,
   }
@@ -105,7 +105,7 @@ watch(
   () => getUser?.value,
   (newValue, oldValue) => {
     if (newValue?.username !== oldValue?.username)
-      useTitle(`${newValue.username}'s Status - Lanyard Visualizer`)
+      useTitle(`${newValue.username}'s Status - /talk`)
   }
 )
 
@@ -141,6 +141,7 @@ else {
           op: 2,
           d: {
             subscribe_to_id: userId,
+            subscribe_to_all: true, 
           },
         })
       )
@@ -176,12 +177,12 @@ else {
         Make sure you entered a valid Discord user ID and make sure the user is
         in
         <a
-          href="https://lanyard.rest/discord"
+          href="https://discord.gg/talk"
           title="Join Discord"
           class="underline underline-dashed underline-white/20"
           rel="noreferrer"
           target="_blank"
-          >Lanyard's Discord server</a
+          >/talk Discord server</a
         >. Reload the page after you join the Discord server or try with an user
         ID who is already in Discord.
       </p>
@@ -291,7 +292,7 @@ else {
         class="btn w-max bg-transparent mx-auto"
       >
         <IconBack />
-        <span>Join /talk</span>
+        <span>Go back</span>
       </RouterLink>
     </div>
   </Transition>
