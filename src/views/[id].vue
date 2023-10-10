@@ -239,6 +239,7 @@ else {
             </h2>
           </div>
         </div>
+        
 
         <a
           :href="`https://discord.com/users/${getUser.id}`"
@@ -270,12 +271,13 @@ else {
           :track-id="getPlayingStatus.trackId"
         />
       </div>
+      
 
       <div v-else class="rounded-lg bg-white/5 text-white/30 text-sm p-4">
         {{
           isConnecting
             ? "Trying to establish a WS connection..."
-            : "User is not playing anything."
+            : "A presence could not be detected"
         }}
       </div>
 
@@ -289,7 +291,7 @@ else {
         class="btn w-max bg-transparent mx-auto"
       >
         <IconBack />
-        <span>Go back home</span>
+        <span>Join /talk</span>
       </RouterLink>
     </div>
   </Transition>
