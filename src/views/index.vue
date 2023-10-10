@@ -41,7 +41,7 @@ onStartTyping(() => {
       </div>
 
       <div v-motion-fade :delay="300" class="flex flex-col items-center gap-6">
-        <img src="/Logo.png" alt="Lanyard logo" class="w-24 h-24" />
+        <img src="/Logo.png" alt="Lanyard logo" class="h-24" />
 
         <h1
           class="text-5xl md:text-7xl font-bold bg-gradient-to-tl from-gray-50 via-gray-100 to-gray-200 bg-clip-text text-transparent text-center"
