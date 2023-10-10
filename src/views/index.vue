@@ -3,7 +3,8 @@ import { onStartTyping, useTitle } from "@vueuse/core"
 import { ref } from "vue"
 import { useRouter } from "vue-router"
 
-// Icons
+// Iconsicon-tabler-brand-discord
+import IconBrandDiscord  from "~icons/tabler/brand-discord"
 import IconGithub from "~icons/tabler/brand-github"
 import IconLink from "~icons/tabler/link"
 
@@ -41,20 +42,13 @@ onStartTyping(() => {
       </div>
 
       <div v-motion-fade :delay="300" class="flex flex-col items-center gap-6">
-        <img src="/Logo.png" alt="Lanyard logo" class="h-24" />
+        <img src="/Logo.png" alt="Lanyard logo" class="h-12" />
 
-        <h1
-          class="text-5xl md:text-7xl font-bold bg-gradient-to-tl from-gray-50 via-gray-100 to-gray-200 bg-clip-text text-transparent text-center"
-        >
-          <span class="block">Lanyard</span>
-          <span class="block">Visualizer</span>
-        </h1>
+   
 
-        <p class="text-white/50 md:text-lg md:w-2/3 text-center font-medium">
-          A proof-of-concept example to show what you can build with Lanyard
-          API.
-        </p>
-
+        <h4 class="text-white/50 md:text-lg md:w-2/3 text-center font-semibold">
+          Neat little user presence tracker.
+        </h4>
         <div class="relative w-full md:w-1/2 flex justify-center">
           <input
             v-model="userId"
@@ -80,20 +74,14 @@ onStartTyping(() => {
 
         <div class="flex space-x-4 text-xl md:text-base text-white/50">
           <a
-            href="https://github.com/eggsy/lanyard-visualizer"
+            href="https://discord.gg/talk"
             target="_blank"
-            title="Visit GitHub repository"
+            title="Join our discord"
           >
-            <IconGithub class="hover:text-white transition-colors" />
+            <IconBrandDiscord class="hover:text-white transition-colors" />
           </a>
 
-          <a
-            href="https://eggsy.xyz"
-            target="_blank"
-            title="Visit developer's website"
-          >
-            <IconLink class="hover:text-white transition-colors" />
-          </a>
+         
         </div>
       </div>
     </header>
