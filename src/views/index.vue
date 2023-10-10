@@ -37,7 +37,7 @@ onStartTyping(() => {
         <img
           src="/header-background.png"
           alt="Stylistic header background"
-          class="object-cover h-full w-full max-w-screen max-h-screen opacity-10"
+          class="object-cover h-full w-full max-w-screen max-h-screen opacity-2"
         />
       </div>
 
